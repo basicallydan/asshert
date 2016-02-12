@@ -1,8 +1,5 @@
 #!/usr/bin/env bash 
 
-reportFailure() {
-  echo "$1 failed"
-}
 
 assertTrue() {
   if (($1)); then
@@ -29,3 +26,4 @@ assertNotEqual() {
   assertFalse "$1==$2"
   return $?
 }
+
