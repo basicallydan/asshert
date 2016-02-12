@@ -1,6 +1,5 @@
 #!/usr/bin/env bash 
 
-
 assertTrue() {
   if (($1)); then
     return 0
