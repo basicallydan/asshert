@@ -8,7 +8,15 @@ assertTrue() {
   if (($1)); then
     return 0
   else
-    reportFailure $1; return 1
+    echo "Result: \"$1\"==False. Expected \"$1\"==True.";return 1
+  fi
+}
+
+assertFalse() {
+  if (($1)); then
+    echo "Result: \"$1\"==True. Expected \"$1\"==False.";return 1
+  else
+    return 0
   fi
 }
 
