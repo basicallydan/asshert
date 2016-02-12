@@ -25,3 +25,7 @@ assertEqual() {
   return $?
 }
 
+assertNotEqual() {
+  assertFalse "$1==$2"
+  return $?
+}
